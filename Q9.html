@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Task 9</title>
+    <style>
+      body {
+        background-color: black;
+        color: rgb(2, 255, 36);
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        border: 2px solid rgb(1, 1, 240);
+        height: 300px;
+        width: 600px;
+        margin-top: 70px;
+        margin-left: 350px;
+      }
+      h1 {
+        text-align: center;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="edit">
+      <h1>content Editable</h1>
+      <h2>
+        When a cursor is moved over an content, allow the user to edit the
+        content in HTML page. NOTE: Input element should not be used.
+      </h2>
+      <br />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing Architecto, esse hic
+        est porro tenetur saepe voluptate ipsum quasi sit quas, natus alias ea
+        reiciendis ad! Commodi dolor voluptate labore nostrum numquam omnis
+        possimus quasi consequuntur distinctio id explicabo eveniet saepe
+        nesciunt maiores eius dolore quidem, deleniti enim vitae laboriosam
+        voluptatem itaque exercitationem voluptatibus nemo. Voluptatum error
+        voluptate ipsam quia est quam? Dicta, voluptatum nihil. Odio, doloremque
+        autem voluptates iusto hic ratione rem corrupti quisquam consectetur
+        modi error velit deleniti rerum. Ipsam tenetur quas repellat placeat
+        perspiciatis, non facere obcaecati suscipit accusantium tempore! Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Vero officia, alias
+        tempora nihil accusantium esse ullam quis laudantium? Debitis eum facere
+        autem nam soluta architecto. Voluptas, iusto maiores! Assumenda facilis
+        aliquid magnam. Quisquam, quod? Consectetur quos consequuntur nulla
+        harum, vero eum deleniti molestias pariatur possimus eligendi porro
+        commodi cumque. Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Ullam adipisci in sunt labore consequuntur quaerat ea a reiciendis
+        odit harum.
+      </p>
+    </div>
+    <script>
+      const edit = document.getElementById("edit");
+      edit.addEventListener("mouseover", () => {
+        edit.setAttribute("contenteditable", "true");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Task 7</title>
+    <style>
+      body {
+        background-color: black;
+        color: aqua;
+      }
+      h2 {
+        text-align: center;
+      }
+      video{
+        border: 4px white;
+        margin-top: 70px;
+        margin-left: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      In your HTML Add two buttons, where first button action for full screen
+      mode and the second button for exit from full screen mode.
+    </h2>
+    <video
+      src="https://www.imdb.com/video/vi2883960089/"
+      id="video"
+      style="height: 400px; width: 400px"
+      controls
+    ></video>
+    <button id="fullscreen">Fullscreen</button>
+    <button id="exit">Exit Fullscreen</button>
+    <script>
+      const video = document.getElementById("video");
+      const fullscreen = document.getElementById("fullscreen");
+      const exit = document.getElementById("exit");
+      fullscreen.addEventListener("click", () => {
+        if (video.requestFullscreen) {
+          video.requestFullscreen();
+        }
+      });
+      exit.addEventListener("click", () => {
+        if (video.exitFullscreen) {
+          video.exitFullscreen();
+        }
+      });
+    </script>
+  </body>
+</html>

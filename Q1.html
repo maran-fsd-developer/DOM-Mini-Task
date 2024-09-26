@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: chartreuse;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background-color: black;
+        color: rgb(255, 255, 255);
+        font-family: Georgia, Times, "Times New Roman", serif;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        border: 2px solid rgb(255, 255, 255);
+        margin-left: 550px;
+        margin-top: 150px;
+      }
+      h4 {
+        align-items: center;
+        margin-top: 90px;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Color a span/div element content when a user moves the mouse over the
+      element.
+    </h1>
+    <div id="color">
+      <h4>Change My Color</h4>
+    </div>
+    <script>
+      //!Color a span/div element content when a user moves the mouse over the element.
+      const color = document.getElementById("color");
+      color.addEventListener(
+        "mouseover",
+        () => (color.style.backgroundColor = "chartreuse")
+      );
+      color.addEventListener(
+        "mouseleave",
+        () => (color.style.backgroundColor = "black")
+      );
+    </script>
+  </body>
+</html>
